@@ -207,7 +207,7 @@ ul li a:hover {
 /* Mobile ke liye responsive */
 @media (max-width: 768px) {
   .slides-div {
-    height: 320px;
+    height: 280px;
     background: linear-gradient(0deg, #ff0000 0%, #000000 6%);
   }
 
@@ -222,7 +222,7 @@ ul li a:hover {
     width: 46%;
     height: 56%; /* Slightly smaller */
     left: 24.5%;
-    top: 28%;
+    top: 18%;
     transform-style: preserve-3d;
     transition: transform 0.6s ease;
   }
