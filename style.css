@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: #413e3e;
+}
+
+/* Cmplete navbar */
+.navbar {
+    width: 100%;
+    /* instead of 100vw */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+    justify-content: space-between;
+    position: relative;
+    /* dropdown ke liye zaroori */
+}
+
+/* Left part of navbar */
+.left-nav {
+    display: flex;
+    /* border: 1px solid white; */
+    margin-left: 10px;
+    margin-right: 20px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.left-nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+/* List items of navbar */
+
+ul {
+    gap: 50px;
+    display: flex;
+    flex: 1;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(240, 255, 29);
+    text-decoration: none;
+}
+
+/* Right navbar */
+.right-nav {
+    display: flex;
+    padding: 10px;
+    gap: 50px;
+    /* border: 1px solid white; */
+}
+
+.right-nav .nav-btn {
+    box-shadow: 0px 4px 10px rgba(159, 153, 153, 0.5);
+    width: 100px;
+    height: 30px;
+    color: white;
+    background: linear-gradient(0deg, #b91818 0%, #483737 30%);
+    border-radius: 20px;
+    border: 2px inset gold;
+}
+
+.right-nav .nav-btn:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+/* Menu icon of navbar */
+.menuicon {
+    display: none;
+}
+
+.menuicon i {
+    /* border: 1px solid white; */
+    color: white;
+    font-size: 34px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menuicon i:hover {
+    transform: scale(1.02);
+}
+
+/* This is the ned of navbar */
+
+
+/* This is the start of Card slider */
+
+.slides-div {
+    height: 578px;
+    background: linear-gradient(0deg, #ff0000 0%, #000000 6%);
+
+}
+
+.slider-container {
+    position: relative;
+    width: 800px;
+    /* Desktop size */
+    height: 550px;
+    /* Thoda chhota */
+    margin: auto;
+    margin-top: 2px;
+    perspective: 1000px;
+    overflow: hidden;
+    /* border: 2px solid white; */
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate 15s infinite linear;
+}
+
+.slide {
+    position: absolute;
+    width: 45%;
+    /* Image chhoti ho gayi */
+    height: 70%;
+    left: 27.5%;
+    /* Center properly */
+    top: 15%;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ab slides zyada close aur compact dikhenge */
+.slide:nth-child(1) {
+    transform: rotateY(0deg) translateZ(220px);
+}
+
+.slide:nth-child(2) {
+    transform: rotateY(90deg) translateZ(220px);
+}
+
+.slide:nth-child(3) {
+    transform: rotateY(180deg) translateZ(220px);
+}
+
+.slide:nth-child(4) {
+    transform: rotateY(270deg) translateZ(220px);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateY(90deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    75% {
+        transform: rotateY(270deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.slider-container:hover .slider {
+    animation-play-state: paused;
+}
+
+/* Mobile ke liye responsive */
+@media (max-width: 768px) {
+    .slides-div {
+        height: 320px;
+        background: linear-gradient(0deg, #ff0000 0%, #000000 6%);
+
+    }
+
+    .slider-container {
+        width: 100%;
+        height: 300px;
+        /* Thoda bada height for better visibility */
+        perspective: 800px;
+        /* 3D effect smooth */
+        overflow: hidden;
+    }
+
+    .slide {
+        width: 55%;
+        height: 65%;
+        /* Thoda adjust height for mobile */
+        left: 22.5%;
+        /* Centered */
+        top: 17.5%;
+        /* Center vertically */
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease;
+        /* Smooth animation */
+    }
+
+    /* Adjust 3D rotation for smaller screens */
+    .slide:nth-child(1) {
+        transform: rotateY(0deg) translateZ(200px);
+    }
+
+    .slide:nth-child(2) {
+        transform: rotateY(90deg) translateZ(200px);
+    }
+
+    .slide:nth-child(3) {
+        transform: rotateY(180deg) translateZ(200px);
+    }
+
+    .slide:nth-child(4) {
+        transform: rotateY(270deg) translateZ(200px);
+    }
+}
+
+
+
+@media (max-width:840px) {
+    ul {
+        position: absolute;
+        top: 54px;
+        /* navbar ke neeche */
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #000;
+        display: none;
+        /* default hidden */
+    }
+
+    ul.active {
+        display: flex;
+        /* JS se toggle karenge */
+    }
+
+    .right-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuicon {
+        display: block;
+    }
+}
