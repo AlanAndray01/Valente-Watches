@@ -219,18 +219,18 @@ ul li a:hover {
   }
 
   .slide {
-    width: 55%;
-    height: 70%; /* Slightly smaller */
-    left: 22.5%;
-    top: 28%;
+    width: 44%;
+    height: 52%; /* Slightly smaller */
+    left: 29.5%;
+    top: 17%;
     transform-style: preserve-3d;
     transition: transform 0.6s ease;
   }
 
-  .slide:nth-child(1) { transform: rotateY(0deg) translateZ(190px); }
-  .slide:nth-child(2) { transform: rotateY(90deg) translateZ(190px); }
-  .slide:nth-child(3) { transform: rotateY(180deg) translateZ(190px); }
-  .slide:nth-child(4) { transform: rotateY(270deg) translateZ(190px); }
+  .slide:nth-child(1) { transform: rotateY(0deg) translateZ(150px); }
+  .slide:nth-child(2) { transform: rotateY(90deg) translateZ(150px); }
+  .slide:nth-child(3) { transform: rotateY(180deg) translateZ(150px); }
+  .slide:nth-child(4) { transform: rotateY(270deg) translateZ(150px); }
 }
 
 
