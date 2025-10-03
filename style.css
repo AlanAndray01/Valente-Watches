@@ -109,17 +109,20 @@ ul li a:hover {
 /* Menu icon of navbar */
 .menuicon {
     display: none;
+    color: #00ff6a;
 }
 
 .menuicon i {
     /* border: 1px solid white; */
-    color: white;
+    background: white;
+    color: #000000;
     font-size: 34px;
     padding: 10px;
     cursor: pointer;
 }
 
 .menuicon i:hover {
+    color: #00ff6a;
     transform: scale(1.02);
 }
 
@@ -237,49 +240,60 @@ ul li a:hover {
 .articleline {
     color: #000000;
     background: rgba(255, 255, 255, 0.2);
-    /* thoda transparent white */
     border-radius: 15px;
     backdrop-filter: blur(10px);
-    /* glass blur effect */
     -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
     width: 100%;
     font-size: 40px;
     padding: 2%;
-    margin-top: 0.1%;
-    /* border: 2px solid white; */
+    margin-top: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .articlesbro {
-    /* border: 2px solid white; */
-    height: 30rem;
+    /* border: 2px solid rgb(0, 0, 0); */
+    height: auto;
     width: auto;
     margin: 1%;
+    padding: 0.5%;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.2); /* thoda transparent white */
-  border-radius: 15px;
-  backdrop-filter: blur(10px); /* glass blur effect */
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
-  box-shadow: 0px 4px 10px rgba(159, 153, 153, 0.5);
-    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(159, 153, 153, 0.5);
+    display: flex;
+    box-sizing: border-box;
+}
+.articlesbrono2 {
+    /* border: 2px solid rgb(0, 0, 0); */
+    height: auto;
+    width: auto;
+    margin: 1%;
+    padding: 0.5%;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(159, 153, 153, 0.5);
     display: flex;
     box-sizing: border-box;
 }
 
 .article1 {
-    /* border: 1px solid white; */
+    /* border: 1px solid black; */
     position: relative;
-    width: auto;
-    height: 29rem;
-    /* Screen height ke hisaab se adjust */
-    background: rgba(255, 255, 255, 0.2); /* thoda transparent white */
-  border-radius: 15px;
-  backdrop-filter: blur(10px); /* glass blur effect */
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
-    padding: 2px;
+    width: 100%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0.1%;
     margin: 2px;
     margin-top: 8px;
     border-radius: 12px;
@@ -288,10 +302,14 @@ ul li a:hover {
 
 .articleh1 {
     color: #000000;
-    text-shadow: 2px 2px 6px rgba(108, 108, 108, 0.4); /* green glow */
-    margin-top: 36px;
-    margin-bottom: 40px;
+    text-shadow: 2px 2px 6px rgba(108, 108, 108, 0.4);
+    /* green glow */
+    margin-top: 1%;
+    margin-bottom: 1%;
     margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .articlep {
@@ -304,164 +322,225 @@ ul li a:hover {
 
 .article1img {
     margin-top: 8px;
-    height: 29rem;
-    width: auto;
-    padding: 40px;
-
-    /* border: 1px solid gold; */
+    height: auto;
+    object-fit: cover;
+    width: 70%;
+    padding: 2%;
+    border-radius: 12px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .articleimg1done {
     /* border: 1px solid white; */
     /* box-shadow: 0px 4px 10px rgb(44, 255, 29); */
     box-shadow: 1px 1px 15px 3px #000000;
-    margin-top: 12px;
-    width: 28rem;
-    height: 22rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
     border-radius: 12px;
 }
 
 .article2img {
     margin-top: 8px;
-    height: 29rem;
-    width: auto;
-    padding: 40px;
-    padding-left: 100px;
-    /* border: 1px solid gold; */
+    height: auto;
+    object-fit: cover;
+    width: 70%;
+    padding: 2%;
+    border-radius: 12px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .articleimg2done {
     /* border: 1px solid white; */
-    /* box-shadow: 0px 4px 10px rgb(126, 123, 123); */
+    /* box-shadow: 0px 4px 10px rgb(44, 255, 29); */
     box-shadow: 1px 1px 15px 3px #000000;
-    margin-top: 12px;
-    width: 28rem;
-    height: 22rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
     border-radius: 12px;
 }
 
 .article3img {
     margin-top: 8px;
-    height: 29rem;
-    width: auto;
-    padding: 40px;
-    /* border: 1px solid gold; */
+    height: auto;
+    object-fit: cover;
+    width: 70%;
+    padding: 2%;
+    border-radius: 12px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .articleimg3done {
     /* border: 1px solid white; */
-    /* box-shadow: 0px 4px 10px rgb(126, 123, 123); */
+    /* box-shadow: 0px 4px 10px rgb(44, 255, 29); */
     box-shadow: 1px 1px 15px 3px #000000;
-    margin-top: 12px;
-    width: 28rem;
-    height: 22rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 1%;
+    width: 100%;
+    height: auto;
     border-radius: 12px;
 }
+
 
 /* Contact Us page */
 
 #contact {
-  max-width: auto;
-  margin: 1%;
-  padding: 30px;
-  border-radius: 15px;
-  
+    width: 98%;
+    height: auto;
+    margin: 1%;
+    padding: 30px;
+    border-radius: 15px;
 
-  /* Glassy Effect */
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    /* Glassy Effect */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 #contact h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #00ff6a;
-  text-shadow: 0 0 10px rgba(0, 255, 100, 0.7);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #00ff6a;
+    text-shadow: 0 0 10px rgba(0, 255, 100, 0.7);
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-form label {
-  margin: 10px 0 5px;
-  font-size: 16px;
-  padding:1%;
-  color: #00ff6a;
-  /* text-align: left;       left align */
-  width: 48%;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    padding: 1%;
+    color: #00ff6a;
+    width: 80%;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 50%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
-  padding: 12px;
-  border: none;
-  border-radius: 10px;
-  outline: none;
-  margin-bottom: 15px;
-  font-size: 14px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 14px;
 
-  background: rgba(170, 164, 164, 0.2);
-  color: black;
-  box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+    background: rgba(170, 164, 164, 0.2);
+    color: black;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #959595;
+    color: #959595;
 }
 
 .contact-form button {
-  padding: 12px;
-  border: none;
-  border-radius: 10px;
-  color: rgb(0, 0, 0);
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
     background: linear-gradient(0deg, #6dff2e 0%, #ffffff 8%);
     border: 2px solid #6dff2e;
     /* transition: background-color 1.4s ease, transform 0.3s ease; */
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.1s ease, transform 0.2s ease;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.1s ease, transform 0.2s ease;
 }
 
 .contact-form button:hover {
-  background: linear-gradient(0deg, #6dff2e 0%, #ffffff 99%);
-  transform: scale(1.05);
+    background: linear-gradient(0deg, #6dff2e 0%, #ffffff 99%);
+    transform: scale(1.05);
+}
+/* contact Form finished here */
+
+/* Footer  */
+Footer {
+    width: 100%;
+    height: auto;
+    text-align:center; 
+    padding: 10px; 
+    background:#222; 
+    color:#fff; 
+    font-size:14px;
+    cursor: pointer;
 }
 
 
 
-/* Articles responsiveness */
+/* Articles media query */
+/* Articles Tab media query */
+
+@media (max-width: 1024px) {
+    .articlesbro {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .articlesbrono2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
+/* Articles Mobile Media query */
+/* Mobile view */
+@media (max-width: 768px) {
+    .articlesbro {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .articlesbrono2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 
 
-
-
+/* Image slider of the page */
 /* Mobile ke liye responsive */
 @media (max-width: 768px) {
     .slides-div {
-        height: 240px;
-        background: linear-gradient(0deg, #ff0000 0%, #000000 6%);
+        height: auto;
+        width: 100%;
     }
 
     .slider-container {
@@ -476,7 +555,7 @@ ul li a:hover {
         width: 44%;
         height: 52%;
         /* Slightly smaller */
-        left: 29.5%;
+        left: 28.5%;
         top: 17%;
         transform-style: preserve-3d;
         transition: transform 0.6s ease;
@@ -499,7 +578,7 @@ ul li a:hover {
     }
 }
 
-
+/* Media query of navbar */
 
 @media (max-width:840px) {
     ul {
@@ -509,7 +588,7 @@ ul li a:hover {
         right: 0;
         flex-direction: column;
         text-align: center;
-        background: #000;
+        background: #ffffff;
         display: none;
         z-index: 9999;
         /* Add this line to bring menu above slider */
