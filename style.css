@@ -141,7 +141,6 @@ ul li a:hover {
     backdrop-filter: blur(10px);
     /* glass blur effect */
     -webkit-backdrop-filter: blur(10px);
-    /* Safari support */
     /* border: 1px solid rgba(255, 255, 255, 0.3); */
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
 
@@ -150,9 +149,7 @@ ul li a:hover {
 .slider-container {
     position: relative;
     width: 1000px;
-    /* Desktop size */
     height: 500px;
-    /* Thoda chhota */
     margin: auto;
     margin-top: 2px;
     perspective: 3200px;
