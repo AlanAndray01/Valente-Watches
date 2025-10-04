@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 25%, transparent 25%),
+        linear-gradient(225deg, rgba(255, 255, 255, 0.6) 25%, transparent 25%),
+        linear-gradient(45deg, rgba(255, 255, 255, 0.6) 25%, transparent 25%),
+        linear-gradient(315deg, rgba(255, 255, 255, 0.6) 25%, #f9f9f9 25%);
+    background-size: 40px 40px;
+    /* tile size */
+}
+
+.container {
+    margin: 4px;
+    /* border: 2px solid black; */
+    border-radius: 12px;
+    width: 99.6%;
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-h1 {
+    color:#09ff00;
+    font-size: 26px;
+}
+
+/* Signup container */
+.signup {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Form labels and inputs */
+.signup-form label {
+  display: block;
+  color:#09ff00;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #c6b8b8;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+  color: black;
+}
+
+.signup-form input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 1px #09ff00;
+  border: 2px solid #09ff00;
+}
+
+/* Signup button */
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #1ee417;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.signup-form button:hover {
+  background: #09ff00;
+}
+
+/* Admin section */
+.signup h2 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.signup p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.signup a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .signup, .login {
+    max-width: 90%;
+    padding: 1.5rem 2rem;
+  }
+
+  .signup-form input, 
+  .login-form input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .signup-form button,
+  .login-form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .signup h2, .login h2 {
+    font-size: 1rem;
+  }
+
+  .signup p, .login p {
+    font-size: 0.85rem;
+  }
+}
+
+/* For very small screens (phones under 480px) */
+@media (max-width: 480px) {
+  .signup, .login {
+    padding: 1rem;
+  }
+
+  .signup-h1, .login-h1 {
+    font-size: 1.2rem;
+  }
+
+  .signup-form input,
+  .login-form input {
+    font-size: 0.85rem;
+  }
+}

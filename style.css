@@ -98,6 +98,11 @@ ul li a:hover {
     transition: background-color 1.4s ease, transform 0.3s ease;
 }
 
+.nav-btn a {
+    text-decoration: none;
+    color: black;
+}
+
 .right-nav .nav-btn:hover {
     cursor: pointer;
     font-size: 14px;
