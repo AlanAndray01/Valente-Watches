@@ -115,7 +115,7 @@ ul li a:hover {
 .menuicon i {
     /* border: 1px solid white; */
     background: white;
-    color: #000000;
+    color: #00ff6a;
     font-size: 34px;
     padding: 10px;
     cursor: pointer;
@@ -132,10 +132,10 @@ ul li a:hover {
 /* This is the start of Card slider */
 
 .slides-div {
-    margin: 4px;
+    margin: 2px;
     /* border: 2px solid black; */
-    height: 520px;
-    background: linear-gradient(360deg, #04ff00 1%, #ffffff 4%);
+    height: 470px;
+    background: linear-gradient(360deg, #7a7a7a 1%, #ffffff 4%);
     /* thoda transparent white */
     border-radius: 15px;
     backdrop-filter: blur(10px);
@@ -175,7 +175,7 @@ ul li a:hover {
     height: 70%;
     left: 25.5%;
     /* Center properly */
-    top: 15%;
+    top: 12%;
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
@@ -268,6 +268,7 @@ ul li a:hover {
     display: flex;
     box-sizing: border-box;
 }
+
 .articlesbrono2 {
     /* border: 2px solid rgb(0, 0, 0); */
     height: auto;
@@ -472,17 +473,18 @@ ul li a:hover {
     background: linear-gradient(0deg, #6dff2e 0%, #ffffff 99%);
     transform: scale(1.05);
 }
+
 /* contact Form finished here */
 
 /* Footer  */
 Footer {
     width: 100%;
     height: auto;
-    text-align:center; 
-    padding: 10px; 
-    background:#222; 
-    color:#fff; 
-    font-size:14px;
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -510,6 +512,48 @@ Footer {
         flex-direction: column;
     }
 
+    .articleline {
+        font-size: 30px;
+    }
+
+    .article1img {
+        margin-top: 8px;
+        height: auto;
+        object-fit: cover;
+        width: 94%;
+        padding: 2%;
+        border-radius: 12px;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .article2img {
+        margin-top: 8px;
+        height: auto;
+        object-fit: cover;
+        width: 94%;
+        padding: 2%;
+        border-radius: 12px;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .article3img {
+        margin-top: 8px;
+        height: auto;
+        object-fit: cover;
+        width: 94%;
+        padding: 2%;
+        border-radius: 12px;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Articles Mobile Media query */
@@ -532,6 +576,49 @@ Footer {
         justify-content: center;
         flex-direction: column;
     }
+
+    .articleline {
+        font-size: 30px;
+    }
+
+    .article1img {
+        margin-top: 8px;
+        height: auto;
+        object-fit: cover;
+        width: 94%;
+        padding: 2%;
+        border-radius: 12px;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .article2img {
+        margin-top: 8px;
+        height: auto;
+        object-fit: cover;
+        width: 94%;
+        padding: 2%;
+        border-radius: 12px;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .article3img {
+        margin-top: 8px;
+        height: auto;
+        object-fit: cover;
+        width: 94%;
+        padding: 2%;
+        border-radius: 12px;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
@@ -545,36 +632,36 @@ Footer {
 
     .slider-container {
         width: 100%;
-        height: 300px;
+        height: 240px;
         perspective: 700px;
         /* Thoda kam for better proportion */
         overflow: hidden;
     }
 
     .slide {
-        width: 44%;
-        height: 52%;
+        width: 54%;
+        height: 70%;
         /* Slightly smaller */
-        left: 28.5%;
-        top: 17%;
+        left: 23.5%;
+        top: 16%;
         transform-style: preserve-3d;
         transition: transform 0.6s ease;
     }
 
     .slide:nth-child(1) {
-        transform: rotateY(0deg) translateZ(150px);
+        transform: rotateY(0deg) translateZ(130px);
     }
 
     .slide:nth-child(2) {
-        transform: rotateY(90deg) translateZ(150px);
+        transform: rotateY(90deg) translateZ(130px);
     }
 
     .slide:nth-child(3) {
-        transform: rotateY(180deg) translateZ(150px);
+        transform: rotateY(180deg) translateZ(130px);
     }
 
     .slide:nth-child(4) {
-        transform: rotateY(270deg) translateZ(150px);
+        transform: rotateY(270deg) translateZ(130px);
     }
 }
 
